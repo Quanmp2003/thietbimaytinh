@@ -1,0 +1,214 @@
+/* Định dạng cơ bản cho trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center; /* Căn giữa toàn bộ văn bản mặc định */
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Định dạng cho bảng so sánh */
+.comparison-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Căn giữa văn bản trong bảng */
+}
+
+.comparison-table th, .comparison-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.comparison-table th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    color: #333;
+}
+
+.comparison-table td {
+    color: #555;
+    text-align: left; /* Căn trái cho nội dung bảng */
+}
+
+/* Định dạng cho footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Định dạng cho phần so sánh CPU */
+.dark-body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dark-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dark-h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.dark-cpu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.dark-cpu-box {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.dark-cpu-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.dark-vs-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.dark-cpu-description {
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    text-align: left; /* Căn trái cho nội dung mô tả */
+}
+
+.dark-comparison-section {
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dark-comparison-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0078D7;
+    text-align: center;
+}
+
+.dark-advantage {
+    margin-top: 10px;
+    text-align: left; /* Căn trái cho phần danh sách lợi thế */
+}
+
+.dark-advantage h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.dark-advantage ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left; /* Căn trái cho danh sách */
+}
+
+.dark-advantage ul li {
+    font-size: 14px;
+    line-height: 1.8;
+    position: relative;
+    color: #333;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.dark-advantage ul li::before {
+    content: '✅';
+    margin-right: 10px;
+    color: #28a745;
+}
+/* Định dạng cho banner bên trái, hiển thị từ dưới header */
+.banner-left {
+    position: fixed;
+    top: 60px; /* Đặt vị trí bắt đầu dưới header */
+    left: 0;
+    width: 120px;
+    height: calc(100vh - 60px); /* Chiều cao còn lại sau header */
+    background-color: #7b1d1d00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.banner-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Định dạng cho banner bên phải, hiển thị từ dưới header */
+.banner-right {
+    position: fixed;
+    top: 60px; /* Đặt vị trí bắt đầu dưới header */
+    right: 0;
+    width: 120px;
+    height: calc(100vh - 60px); /* Chiều cao còn lại sau header */
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.banner-right img {
+    max-width: 100%;
+    height: auto;
+}
