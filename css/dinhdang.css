@@ -737,3 +737,7 @@ h2 {
     max-height: 200px; /* Điều chỉnh chiều cao tối đa của video */
     object-fit: cover; /* Đảm bảo video giữ tỷ lệ khi chiều cao bị giới hạn */
 }
+.chi-nhanh {
+    margin-left: 3px;
+}
+   
